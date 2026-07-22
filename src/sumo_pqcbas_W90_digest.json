@@ -1,0 +1,63 @@
+{
+ "source": "SUMO FCD trace",
+ "fcd_file": "synthetic_fcd.xml",
+ "rsu": {
+  "x": 80.0,
+  "y": 36.0,
+  "R": 150.0
+ },
+ "window_ms": 90.0,
+ "mode": "digest",
+ "seeds": 3,
+ "alg": "ML-DSA-65",
+ "vehicles_in_rsu": 269,
+ "contact_mean_s": 18.7,
+ "messages_total": 807,
+ "e2e_mean_ms": 45.1,
+ "e2e_mean_ci95": 1.52,
+ "e2e_p95_ms": 83.9,
+ "proc_mean_ms": 0.08,
+ "deadline_misses": 0,
+ "miss_rate_pct": 0.0,
+ "per_seed": [
+  {
+   "messages": 269,
+   "accepted": 269,
+   "rejected": 0,
+   "e2e_mean_ms": 44.7,
+   "e2e_p95_ms": 83.0,
+   "proc_mean_ms": 0.08,
+   "deadline_misses": 0,
+   "miss_rate_pct": 0.0,
+   "sim_duration_s": 3595.0,
+   "vehicles_in_rsu": 269,
+   "windows": 260
+  },
+  {
+   "messages": 269,
+   "accepted": 269,
+   "rejected": 0,
+   "e2e_mean_ms": 44.0,
+   "e2e_p95_ms": 82.5,
+   "proc_mean_ms": 0.08,
+   "deadline_misses": 0,
+   "miss_rate_pct": 0.0,
+   "sim_duration_s": 3595.0,
+   "vehicles_in_rsu": 269,
+   "windows": 260
+  },
+  {
+   "messages": 269,
+   "accepted": 269,
+   "rejected": 0,
+   "e2e_mean_ms": 46.6,
+   "e2e_p95_ms": 86.1,
+   "proc_mean_ms": 0.08,
+   "deadline_misses": 0,
+   "miss_rate_pct": 0.0,
+   "sim_duration_s": 3595.0,
+   "vehicles_in_rsu": 269,
+   "windows": 259
+  }
+ ]
+}

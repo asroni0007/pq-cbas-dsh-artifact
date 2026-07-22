@@ -1,0 +1,63 @@
+{
+ "alg": "ML-DSA-65",
+ "note": "RespCheck Eq(44b); shared-A constraint required for PASS",
+ "params": {
+  "q": 8380417,
+  "k": 6,
+  "l": 5,
+  "N": 256,
+  "d": 13,
+  "gamma2": 261888,
+  "beta": 196
+ },
+ "results": {
+  "1": {
+   "m": 1,
+   "O2_norm_z_ok": true,
+   "norm_z_bar": 523463,
+   "Bm_z": 524092,
+   "respcheck_ok": false,
+   "norm_W_bar": 4189747,
+   "Bm_W": 261692,
+   "note": "FAIL \u2013 expected: signers used independent A_i != A_pp",
+   "respcheck_ms": [
+    726.49,
+    720.74,
+    722.55
+   ],
+   "mean_ms": 723.26
+  },
+  "2": {
+   "m": 2,
+   "O2_norm_z_ok": true,
+   "norm_z_bar": 1022067,
+   "Bm_z": 1048184,
+   "respcheck_ok": false,
+   "norm_W_bar": 4184083,
+   "Bm_W": 523384,
+   "note": "FAIL \u2013 expected: signers used independent A_i != A_pp",
+   "respcheck_ms": [
+    766.5,
+    754.69,
+    754.54
+   ],
+   "mean_ms": 758.58
+  },
+  "3": {
+   "m": 3,
+   "O2_norm_z_ok": true,
+   "norm_z_bar": 1423467,
+   "Bm_z": 1572276,
+   "respcheck_ok": false,
+   "norm_W_bar": 4188161,
+   "Bm_W": 785076,
+   "note": "FAIL \u2013 expected: signers used independent A_i != A_pp",
+   "respcheck_ms": [
+    791.0,
+    788.84,
+    790.08
+   ],
+   "mean_ms": 789.97
+  }
+ }
+}
