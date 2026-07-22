@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================================
+     PQ-CBAS-DSH — Config GUI DIPERBAIKI (TANPA peta latar)
+     Versi paling andal untuk mengatasi layar abu-abu. Jaringan +
+     kendaraan + area RSU dijamin muncul, tanpa risiko decal.
+     Jalankan:
+        sumo-gui -c studyarea_gui_nodecal.sumocfg  (opsi: delay 100, start)
+     ================================================================== -->
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <input>
+        <net-file value="StudyAreNetwork.net.xml"/>
+        <route-files value="Demand.rou.xml"/>
+        <additional-files value="PublicTransport.xml,bpu_studyarea.add.xml"/>
+        <gui-settings-file value="gui_settings_nodecalfix.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1.0"/>
+    </time>
+    <processing>
+        <time-to-teleport value="300"/>
+        <ignore-route-errors value="true"/>
+    </processing>
+</configuration>

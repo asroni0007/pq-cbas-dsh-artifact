@@ -1,0 +1,25 @@
+Loading net-file from 'StudyAreNetwork.net.xml' ... done (6ms).
+Loading additional-files from 'PublicTransport.xml' ... done (21ms).
+Loading additional-files from 'bpu_studyarea.add.xml' ... done (1ms).
+Loading route-files incrementally from 'Demand.rou.xml'
+Loading done.
+Simulation version 1.26.0 started with time: 0.00.
+Simulation ended at time: 3600.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 4.13s
+ Real time factor: 872.093
+ UPS: 107988.856589
+Vehicles:
+ Inserted: 4402 (Loaded: 6592)
+ Running: 135
+ Waiting: 2190
+Statistics (avg of 4267):
+ RouteLength: 363.59
+ Speed: 4.93
+ Duration: 100.44
+ WaitingTime: 45.31
+ TimeLoss: 69.56
+ DepartDelay: 344.28
+DijkstraRouter answered 9375 queries and explored 14.86 edges on average.
+DijkstraRouter spent 0.01s answering queries (0.00ms on average).

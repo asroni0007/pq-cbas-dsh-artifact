@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================================
+     PQ-CBAS-DSH — GUI settings (FIXED)
+     Memperbaiki layar abu-abu: viewport eksplisit memaksa kamera fit
+     ke jaringan StudyArea (pusat X=52.7, Y=50.3), decal diselaraskan,
+     dan skema warna yang jelas untuk kendaraan + area RSU.
+     ================================================================== -->
+<viewsettings>
+
+    <!-- Kamera diarahkan tepat ke pusat jaringan.
+         zoom=180 memberi tampilan pas dengan sedikit margin.
+         Inilah kunci yang menyembuhkan layar abu-abu. -->
+    <viewport zoom="100" x="52.7" y="50.3" angle="0.00"/>
+
+    <!-- Skema tampilan standar dengan penyesuaian keterbacaan -->
+    <scheme name="real world">
+        <background backgroundColor="255,255,255"
+                   showGrid="0" gridXSize="100.00" gridYSize="100.00"/>
+
+        <!-- Jalan: lebar & jelas -->
+        <edges laneEdgeMode="0" scaleMode="0"
+               widthExaggeration="1.00" minSize="1.00"
+               showLaneDirection="0" showSublanes="1">
+            <colorScheme name="uniform">
+                <entry color="60,60,60"/>
+            </colorScheme>
+        </edges>
+
+        <!-- Kendaraan: berwarna menurut kecepatan, ukuran diperbesar agar terlihat -->
+        <vehicles vehicleMode="0" vehicleQuality="2"
+                  vehicleSize.minSize="3.00" vehicleSize.exaggeration="3.00"
+                  showBlinker="1" drawMinGap="0">
+            <colorScheme name="by speed">
+                <entry color="255,0,0"   threshold="0.00"/>
+                <entry color="255,255,0" threshold="5.00"/>
+                <entry color="0,255,0"   threshold="13.89"/>
+            </colorScheme>
+        </vehicles>
+
+        <!-- Persimpangan -->
+        <junctions junctionMode="0"
+                   drawShape="1" drawCrossingsAndWalkingareas="1"
+                   junctionSize.minSize="1.00" junctionSize.exaggeration="1.00"/>
+
+        <!-- POI (titik RSU) & polygon (lingkaran cakupan R=150m) -->
+        <pois poiSize.minSize="3.00" poiSize.exaggeration="2.00"
+              poiName.show="1" poiName.size="60.00"/>
+        <polys polySize.minSize="1.00" polySize.exaggeration="1.00"
+               polyName.show="1" polyName.size="60.00"/>
+    </scheme>
+
+    <!-- Peta latar (decal) diselaraskan dengan pusat jaringan yang benar.
+         Jika peta tampak menutupi jalan, HAPUS blok <decals> ini. -->
+    <decals>
+        <decal filename="EditStudyArea670x143.JPG"
+               centerX="52.7" centerY="50.3" centerZ="0.00"
+               width="666.00" height="138.00"
+               altitude="0.00" rotation="0.00"
+               tilt="0.00" roll="0.00" layer="-1.00" screenRelative="0"/>
+    </decals>
+
+</viewsettings>

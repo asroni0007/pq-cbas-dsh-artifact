@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================================
+     PQ-CBAS-DSH — GUI settings TANPA decal (paling andal)
+     Hanya viewport + skema warna. Pakai versi ini kalau peta latar
+     (decal) menyebabkan masalah tampilan. Jaringan dijamin muncul.
+     ================================================================== -->
+<viewsettings>
+
+    <!-- Kunci penyembuh layar abu-abu: kamera diarahkan ke pusat jaringan -->
+    <viewport zoom="100" x="52.7" y="50.3" angle="0.00"/>
+
+    <scheme name="standard">
+        <background backgroundColor="255,255,255" showGrid="0"/>
+
+        <edges laneEdgeMode="0" widthExaggeration="1.00" minSize="1.00">
+            <colorScheme name="uniform">
+                <entry color="80,80,80"/>
+            </colorScheme>
+        </edges>
+
+        <vehicles vehicleQuality="2"
+                  vehicleSize.minSize="3.00" vehicleSize.exaggeration="3.00">
+            <colorScheme name="by speed">
+                <entry color="255,0,0"   threshold="0.00"/>
+                <entry color="255,255,0" threshold="5.00"/>
+                <entry color="0,255,0"   threshold="13.89"/>
+            </colorScheme>
+        </vehicles>
+
+        <junctions drawShape="1"/>
+        <pois poiSize.minSize="3.00" poiName.show="1" poiName.size="60.00"/>
+        <polys polyName.show="1" polyName.size="60.00"/>
+    </scheme>
+
+</viewsettings>
